@@ -1,0 +1,52 @@
+#!/bin/bash
+exec 3>&1
+make_npc() {
+	info=$(dialog --separator '%' --backtitle "" --title "" --mixedform "some more shit" 150 150 10 \
+	"Name: " 1 0 "" 1 30 35 0 0 \
+	"Race: " 2 0 "" 2 30 35 0 0 \
+	"Alignment: " 3 0 "" 3 30 35 0 0 \
+	"Handicap: " 4 0 "" 4 30 35 0 0 \
+	2>&1 1>&3)
+}
+
+
+
+#comment#Add_gcal() {
+#comment#	chernoble=$(dialog --separator '%' --backtitle "" --title "" --mixedform "some more shit" 150 150 10 \
+#comment#	"Title: " 1 0 "" 1 30 35 0 0 \
+#comment#	"Description" 2 0 "" 2 30 35 0 0 \
+#comment#	"Where" 3 0 "" 3 30 35 0 0 \
+#comment#	2>&1 1>&3)
+#comment#	noble=$(echo '--title "'$chernoble | sed 's/.$/"/' | sed 's/%/" --description "/'| sed 's/%/" --where "/')
+#comment#	thedate=$(dialog --date-format %m/%d/%Y --backtitle "" --title "" --calendar "Choose Event Date" 4 40 2>&1 1>&3)
+#comment#	thetime=$(dialog --date-format %I:%M --backtitle "" --title "" --timebox "Time of Event: " 4 30 12 00 00 2>&1 1>&3)
+#comment#	theduration=$(dialog --backtitle "" --title "" --rangebox "Duration of Event: " 4 30 0 60 1 2>&1 1>&3)
+#comment#	thereminder=$(dialog --backtitle "" --title "" --rangebox "Reminder Before Event: " 4 30 0 60 1 2>&1 1>&3)
+#comment#	clear
+#comment#	finalform=$(echo "--calendar potterleo1233@gmail.com" $noble "--when" $thedate $thetime "--duration" $theduration "--reminder" $thereminder "add")
+#comment#	yesno=$(dialog --backtitle "" --title "Acceptable Input?" --yesno "\n\n$(echo $noble)" 40 40 2>&1 1>&3)
+#comment#	retvalue=$?
+#comment#	if [ $retvalue = 0 ]
+#comment#	then
+#comment#		echo $finalform
+#comment#		sleep 2s
+#comment#	else
+#comment#		break
+#comment#	fi
+
+
+
+#make_location() {
+#
+#}
+#
+#list_place() {
+#
+#}
+#
+#list_npc() {
+#
+#}
+#
+make_npc
+echo $info

@@ -1,0 +1,20 @@
+#!/bin/bash
+#find and print the days of a particular month
+#loop to create a calendar to retrieve the last day of the month
+#reconstruct the date format
+ISPFILE=~/work/ISP_Data_Search.csv
+
+process_days() {
+day=($(cal $1 $2));DAY=("${day[@]:9}")
+for i in ${DAY[*]}
+do
+	dates=$(echo "$1/${DAY[$i]}/$2")
+	if [[ $(date '+%u' --date="$dates") -lt 6 ]]
+	then
+		echo "$i"
+	fi
+done
+}
+process_days $1 $2
+
+

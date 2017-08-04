@@ -1,0 +1,84 @@
+set runtimepath+=~/.vim_runtime
+source ~/.vim_runtime/vimrcs/filetypes.vim
+source ~/.vim_runtime/vimrcs/plugins_config.vim
+source ~/.vim_runtime/vimrcs/extended.vim
+
+try
+source ~/.vim_runtime/my_configs.vim
+catch
+endtry
+
+"spf13 start {
+set term=$TERM
+syntax on
+set mouse=a
+filetype plugin indent on
+set virtualedit=onemore
+" Setting up the directories {
+		set backup 					" backups are nice ...
+		set undofile					" so is persistent undo ...
+		set undolevels=1000 "maximum number of changes that can be undone
+		set undoreload=10000 "maximum number lines to save for undo on a buffer reload
+        " Moved to function at bottom of the file
+		"set backupdir=$HOME/.vimbackup//  " but not when they clog .
+		"set directory=$HOME/.vimswap// 	" Same for swap files
+		"set viewdir=$HOME/.vimviews// 	" same for view files
+		
+		"" Creating directories if they don't exist
+		"silent execute '!mkdir -p $HVOME/.vimbackup'
+		"silent execute '!mkdir -p $HOME/.vimswap'
+		"silent execute '!mkdir -p $HOME/.vimviews'
+		set ruler                  	" show the ruler
+		set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%) " a ruler on steroids
+        set nu
+        set ignorecase
+        set smartcase
+        set wildmenu
+        set wildmode=list:longest,full
+        set scrolljump=1
+        set scrolloff=12
+    set list
+    set listchars=tab:>.,trail:.,extends:#,nbsp:.
+" Formatting {
+        set wrap
+	autocmd FileType c,cpp,java,php,js,python,twig,xml,yml autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
+        nnoremap ; :
+        cmap W w
+        cmap WQ wq
+        cmap wQ wq
+        cmap Q q
+        cmap Tabe table
+        nnoremap Y y$
+    nmap <silent> <leader>/ :nohlsearch<CR>
+    cmap cwd lcd %:p:h
+        cmap cd. lcd %:p:h
+        cmap w!! w !sudo tee % >/dev/null
+"Functions
+
+function! InitializeDirectories()
+  let separator = "."
+  let parent = $HOME 
+  let prefix = '.vim'
+  let dir_list = { 
+			  \ 'backup': 'backupdir', 
+			  \ 'views': 'viewdir', 
+			  \ 'swap': 'directory', 
+			  \ 'undo': 'undodir' }
+
+  for [dirname, settingname] in items(dir_list)
+	  let directory = parent . '/' . prefix . dirname . "/"
+	  if exists("*mkdir")
+		  if !isdirectory(directory)
+			  call mkdir(directory)
+		  endif
+	  endif
+	  if !isdirectory(directory)
+		  echo "Warning: Unable to create backup directory: " . directory
+		  echo "Try: mkdir -p " . directory
+	  else  
+          let directory = substitute(directory, " ", "\\\\ ", "")
+          exec "set " . settingname . "=" . directory
+	  endif
+  endfor
+endfunction
+call InitializeDirectories() 

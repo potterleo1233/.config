@@ -1,0 +1,6 @@
+[[ -f ~/.bashrc ]] && source . ~/.bashrc     
+if [[ -z $DISPLAY && ! -e /tmp.X11-unix/XO ]]; then
+	echo "this is a test"
+	read -p "yeah, man"
+	exec skinny
+fi

@@ -1,0 +1,15 @@
+#!/bin/bash
+echo "-----------------Start-T-log-------------------"
+echo
+echo
+echo
+cat T-Log_Search.csv | grep $1 |sed 's/%/\t\t/g'
+echo
+echo
+echo
+echo "------------------Start-Isp--------------------"
+echo
+echo
+echo
+cat ISP_Data_Search.csv | grep $1 |cut -d '%' -f1,2,3,4 | sed 's/%/\t\t/g'
+

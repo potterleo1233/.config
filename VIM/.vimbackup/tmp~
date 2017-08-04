@@ -1,0 +1,6 @@
+this_shit() {
+	echo "$1"
+	echo "$2"
+}
+
+this_shit this shit

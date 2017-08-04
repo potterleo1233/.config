@@ -1,0 +1,9 @@
+#!/bin/bash
+outie=$(md5sum <<< "$RANDOM"| cut -d '-' -f1;outie=$(echo $((0x${innie%% *}))))
+echo "$outie"
+variable=09876
+while read variable
+do
+	echo $variable
+done
+
