@@ -1,0 +1,22 @@
+[settings]
+default-charset=ISO-8859-1
+enable-developer-extras=true
+zoom-text-and-images=true
+last-window-width=1278
+last-window-height=747
+last-panel-position=300
+last-panel-page=2
+last-web-search=2
+location-entry-search=https://duckduckgo.com/?q=%s
+show-statusbar=false
+toolbar-items=TabNew,Back,NextForward,ReloadStop,BookmarkAdd,Location,Search,Trash,CompactMenu
+homepage=about:search
+tabhome=about:blank
+download-folder=/home/lioff
+load-on-startup=MIDORI_STARTUP_BLANK_PAGE
+new-tab-type=MIDORI_NEWTAB_BLANK_PAGE
+user-agent=Mozilla/5.0 (X11; Linux) AppleWebKit/537.32 (KHTML, like Gecko) Chrome/18.0.1025.133 Safari/537.32 Midori/0.5
+
+[extensions]
+libstatus-clock.so=true
+libadblock.so=true

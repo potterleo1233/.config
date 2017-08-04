@@ -1,0 +1,55 @@
+30m0(Build:2)
+
+Rethrow
+
+Rethrow
+Element does not exist and cannot be created: "current.xml"
+Rethrow
+Element does not exist and cannot be created: "lc_imagelist.xml"
+Rethrow
+
+Rethrow
+
+Rethrow
+Element does not exist and cannot be created: "current.xml"
+Rethrow
+Element does not exist and cannot be created: "lc_imagelist.xml"
+Rethrow
+/build/libreoffice-fresh/src/libreoffice-5.3.4.2/sfx2/source/doc/sfxbasemodel.cxx:1626: storeAsURL
+/build/libreoffice-fresh/src/libreoffice-5.3.4.2/sfx2/source/doc/objstor.cxx:1106: Begin
+/build/libreoffice-fresh/src/libreoffice-5.3.4.2/sfx2/source/doc/objstor.cxx:1307: SaveAs/Export
+/build/libreoffice-fresh/src/libreoffice-5.3.4.2/sfx2/source/doc/objstor.cxx:1323: Locking
+/build/libreoffice-fresh/src/libreoffice-5.3.4.2/sfx2/source/doc/objstor.cxx:1537: Storing in alien format.
+/build/libreoffice-fresh/src/libreoffice-5.3.4.2/sfx2/source/doc/objstor.cxx:1650: Medium commit.
+/build/libreoffice-fresh/src/libreoffice-5.3.4.2/sfx2/source/doc/objstor.cxx:1661: Storing is successful.
+/build/libreoffice-fresh/src/libreoffice-5.3.4.2/sfx2/source/doc/sfxbasemodel.cxx:3073: Storing succeeded!
+/build/libreoffice-fresh/src/libreoffice-5.3.4.2/sfx2/source/doc/sfxbasemodel.cxx:1626: storeAsURL
+/build/libreoffice-fresh/src/libreoffice-5.3.4.2/sfx2/source/doc/objstor.cxx:1106: Begin
+/build/libreoffice-fresh/src/libreoffice-5.3.4.2/sfx2/source/doc/objstor.cxx:1307: SaveAs/Export
+/build/libreoffice-fresh/src/libreoffice-5.3.4.2/sfx2/source/doc/objstor.cxx:1323: Locking
+/build/libreoffice-fresh/src/libreoffice-5.3.4.2/sfx2/source/doc/objstor.cxx:1537: Storing in alien format.
+/build/libreoffice-fresh/src/libreoffice-5.3.4.2/sfx2/source/doc/objstor.cxx:1650: Medium commit.
+/build/libreoffice-fresh/src/libreoffice-5.3.4.2/sfx2/source/doc/objstor.cxx:1661: Storing is successful.
+/build/libreoffice-fresh/src/libreoffice-5.3.4.2/sfx2/source/doc/sfxbasemodel.cxx:3073: Storing succeeded!
+
+Rethrow
+
+Rethrow
+Element does not exist and cannot be created: "current.xml"
+Rethrow
+Element does not exist and cannot be created: "lc_imagelist.xml"
+Rethrow
+/build/libreoffice-fresh/src/libreoffice-5.3.4.2/sfx2/source/doc/sfxbasemodel.cxx:1626: storeAsURL
+/build/libreoffice-fresh/src/libreoffice-5.3.4.2/sfx2/source/doc/sfxbasemodel.cxx:1496: storeSelf
+/build/libreoffice-fresh/src/libreoffice-5.3.4.2/sfx2/source/doc/sfxbasemodel.cxx:1510: unexpected parameter for storeSelf, might be no problem if SaveAs is executed.
+/build/libreoffice-fresh/src/libreoffice-5.3.4.2/sfx2/source/doc/objstor.cxx:1106: Begin
+/build/libreoffice-fresh/src/libreoffice-5.3.4.2/sfx2/source/doc/objstor.cxx:1192: Save
+/build/libreoffice-fresh/src/libreoffice-5.3.4.2/sfx2/source/doc/objstor.cxx:1260: Save: Alien to Alien
+/build/libreoffice-fresh/src/libreoffice-5.3.4.2/sfx2/source/doc/objstor.cxx:1323: Locking
+/build/libreoffice-fresh/src/libreoffice-5.3.4.2/sfx2/source/doc/objstor.cxx:1537: Storing in alien format.
+/build/libreoffice-fresh/src/libreoffice-5.3.4.2/sfx2/source/doc/objstor.cxx:1650: Medium commit.
+/build/libreoffice-fresh/src/libreoffice-5.3.4.2/sfx2/source/doc/objstor.cxx:1661: Storing is successful.
+/build/libreoffice-fresh/src/libreoffice-5.3.4.2/sfx2/source/doc/sfxbasemodel.cxx:3073: Storing succeeded!
+/build/libreoffice-fresh/src/libreoffice-5.3.4.2/sfx2/source/doc/sfxbasemodel.cxx:1626: storeAsURL
+/build/libreoffice-fresh/src/libreoffice-5.3.4.2/sfx2/source/doc/sfxbasemodel.cxx:1496: storeSelf
+/build/libreoffice-fresh/src/libreoffice-5.3.4.2/sfx2/source/doc/sfxbasemodel.cxx:1510: unexpected parameter for storeSelf, might be no problem if SaveAs is executed.

@@ -1,0 +1,9 @@
+[Default Applications]
+image/jpeg=feh.desktop
+image/gif=userapp-mpv-Z3A93Y.desktop
+
+[Added Associations]
+image/jpeg=feh.desktop;
+image/gif=userapp-mpv-Z3A93Y.desktop;
+
+[Removed Associations]

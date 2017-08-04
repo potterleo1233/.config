@@ -1,0 +1,39 @@
+[global_config]
+  borderless = True
+  extra_styling = False
+  hide_from_taskbar = True
+  title_hide_sizetext = True
+  window_state = hidden
+[keybindings]
+  cycle_next = <Primary><Super>period
+  cycle_prev = <Primary><Super>comma
+  go_down = <Primary><Shift>j
+  go_prev = <Primary><Shift>h
+  go_right = <Primary><Shift>l
+  go_up = <Primary><Shift>k
+  hide_window = F12
+  next_tab = <Primary><Shift>greater
+  prev_tab = <Primary><Shift>less
+  split_horiz = <Primary><Shift>Right
+  split_vert = <Primary><Shift>Up
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_darkness = 0.83
+    background_type = transparent
+    cursor_color = "#729fcf"
+    cursor_color_fg = False
+    cursor_shape = ibeam
+    foreground_color = "#ef2929"
+    palette = "#2e3436:#75507b:#00aa00:#aa5500:#0000aa:#aa00aa:#00aaaa:#aaaaaa:#555555:#ad7fa8:#55ff55:#ffff55:#5555ff:#ff55ff:#55ffff:#ffffff"
+    scrollback_lines = 1000
+    scrollbar_position = hidden
+    show_titlebar = False
